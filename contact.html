@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+
+  <!--Link CSS-->
+
+  <link rel="stylesheet" href="styles/contact.css">
+
+  <!--Icon-->
+
+  <link rel="icon" href="images/logo.jpg">
+
+  <!--Google Fonts-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+
+  <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous">
+  </script>
+
+</head>
+<body>
+  <div class="container">
+    <span class="big-circle"></span>
+    <img src="images/shape.png" class="square" alt="" />
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Contactează-ne</h3>
+        <p class="text">
+          Ne puteți găsi la:
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="images/location.png" class="icon" alt="" />
+            <p>Str.Matei Gr.Cantacuzino nr.65, Fântâna Mare 727566</p>
+          </div>
+          <div class="information">
+            <img src="images/email.png" class="icon" alt="" />
+            <p>office@do-ma.ro</p>
+          </div>
+          <div class="information">
+            <img src="images/phone.png" class="icon" alt="" />
+            <p>0745598984</p>&nbsp;&nbsp;
+            <img src="images/phone.png" class="icon" alt="" />
+            <p>0744634592</p>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <p>Găsește-ne pe social media:</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/dorinelpintilescu" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+
+        <form action="mailto: office@do-ma.ro" method="post" autocomplete="off" enctype="text/plain">
+          <h3 class="title">Scrie-ne un mesaj</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" />
+            <label for="">Nume</label>
+            <span>Nume</span>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" />
+            <label for="">Telefon</label>
+            <span>Telefon</span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Mesaj</label>
+            <span>Mesaj</span>
+          </div>
+          <input type="submit" value="Trimite" class="btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

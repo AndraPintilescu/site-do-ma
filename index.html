@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DO&MA</title>
+
+  <!--Link CSS-->
+
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!--Icon-->
+
+  <link rel="icon" href="images/logo.jpg">
+
+  <!--Google Fonts-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
+
+  <!--FontAwesome-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+
+  <section class="header">
+    <nav class="navbar">
+      <p class="logo">DO&MA</p>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#servicii">SERVICII</a></li>
+          <li><a href="contact.html" target="_blank">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>SERVICE AUTO</h1>
+      <p>Vindem, montăm, reparăm</p>
+      <a href="#servicii"><button class="hero-btn">Vizitează-ne Pentru A Afla Mai Multe</button></a>
+    </div>
+  </section>
+
+  <!-- Servicii -->
+
+  <section class="servicii" id="servicii">
+    <h1>Serviciile pe care le oferim</h1>
+    <p>Cu o experiență de peste 20 de ani în domeniu, îți oferim o gamă largă de servicii de reparații mecanice, electrice și mentenanță auto. Puteți avea încredere deplină în abilitățile și experiența specialiștilor noștri, în service-ul nostru mașina ta este pe mâini bune. La DO&MA folosim numai piese de calitate, cu o lungă durată de viață care să contribuie la o bună funcționare a mașinii tale.</p>
+
+    <div class="row">
+        <div class="servicii-col">
+            <h3>Reparații mecanice:</h3>
+            <p>Schimb ulei și filtre, înlocuit distribuție motor și adiționale, înlocuit transmisie, rulare direcție, schimb plăcuțe frână etc.</p>
+        </div>
+        <div class="servicii-col">
+            <h3>Reparații electrice:</h3>
+            <p>Reparăm alternatoare, demaroare, cablaje și cam tot ce ține de electricitate &#128513;.</p>
+        </div>
+        <div class="servicii-col">
+            <h3>Alte servicii:</h3>
+            <p>Montăm cârlige de tractare, module electrice, scuturi mecanice, sisteme de încălzire Webasto și Eberspacher. Ne ocupăm de asemenea de climă, aer condiționat, încărcare agent frigorific R134a și multe altele.</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Reparatii -->
+
+  <section class="reparatii">
+    <h1>Un sneak peek din service-ul nostru &#128663;</h1>
+    <div class="row">
+        <div class="reparatii-col">
+            <img src="images/distributie.jpg">
+            <div class="layer">
+                <h3>DISTRIBUȚIE</h3>
+            </div>
+        </div>
+        <div class="reparatii-col">
+            <img src="images/electrice.jpg">
+            <div class="layer">
+                <h3>ELECTRICE</h3>
+            </div>
+        </div>
+        <div class="reparatii-col">
+            <img src="images/carlig.jpg">
+            <div class="layer">
+                <h3>MONTAJ CÂRLIG</h3>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <section class="footer">
+    <a href="#"><button class="back-button">Inapoi sus</button></a>
+    <p>&copy;Pintilescu Andra</p>
+  </section>
+
+  <!-- Script -->
+
+  <script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+  </script>
+
+</body>
+</html>
